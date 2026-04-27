@@ -1,24 +1,53 @@
 .header {
     width: 100%;
     height: 140px;
-    background-color: black ;    
+    background-color: black;
     display: flex;
     color: #fff;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 8%;
+    padding: 0 8%;
 }
 
 .header-right {
     display: flex;
     align-items: center;
     column-gap: 20px;
-
 }
+
 .actions {
     font-size: 22px;
     display: flex;
     align-items: center;
     column-gap: 20px;
     cursor: pointer;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .header {
+        height: 100px;
+        padding: 0 4%;
+    }
+}
+
+/* MOBİL */
+@media (max-width: 480px) {
+    .header {
+        height: auto;
+        padding: 12px 4%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header-right {
+        column-gap: 12px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .actions {
+        font-size: 18px;
+        column-gap: 14px;
+    }
 }
