@@ -24,6 +24,12 @@
     font-size: 16px;
 }
 
+.close {
+    font-size: 22px;
+    margin: 10px 16px;
+    cursor: pointer;
+}
+
 /* MOBİL */
 @media (max-width: 480px) {
     .main-basket {
@@ -44,5 +50,10 @@
 
     .price {
         font-size: 14px;
+    }
+
+    .close{
+        margin: 5px ;
+        font-size: 15px;
     }
 }

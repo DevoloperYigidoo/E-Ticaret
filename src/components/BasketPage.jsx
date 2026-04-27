@@ -4,6 +4,7 @@ import { setIsOpen, totalAmount } from '../redux/slices/basketSlices';
 import BasketItems from './BasketItems';
 import "../css/Basket.css"
 import { useEffect } from 'react';
+import { AiOutlineClose } from "react-icons/ai";
 
 
 function BasketPage() {
@@ -22,6 +23,8 @@ function BasketPage() {
   return (
     <div >
         <Drawer  open={isOpen} onClose={() => dispacth(setIsOpen())} anchor='right'>
+          <AiOutlineClose onClick={() => dispacth(setIsOpen())} className='close' />
+          
             {
               products && products.map((product) => (
                 <BasketItems key={product.id} product={product} />
