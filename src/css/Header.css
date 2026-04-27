@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    height: 140px;
+    background-color: black ;    
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8%;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+}
+.actions {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+}

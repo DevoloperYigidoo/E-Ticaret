@@ -1,0 +1,41 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.product-details {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 130px;
+}
+.product-card {
+    transition: all 0.375s ease;
+    cursor: pointer;
+}
+.product-card:hover {
+    transform: scale(1.090);
+}
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+span {
+    font-size: 35px;
+    color: red;
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.count {
+    font-size: 24px;
+}
