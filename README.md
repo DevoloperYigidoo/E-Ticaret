@@ -1,16 +1,100 @@
-# React + Vite
+# 🛒 E-Ticaret
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React ile geliştirilmiş, FakeStore API kullanan modern bir e-ticaret uygulaması.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Demo:https://e-ticarettt.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Özellikler
 
-## Expanding the ESLint configuration
+- 🛍️ Ürün listeleme ve detay sayfası
+- 🛒 Sepet yönetimi (ekleme, çıkarma, toplam tutar)
+- 🔴 Redux Toolkit ile global state yönetimi
+- 🎨 Material UI bileşenleri
+- 🌙 Karanlık / Aydınlık tema desteği
+- 🔔 Toast bildirimleri (react-toastify)
+- ✨ Framer Motion animasyonları
+- 📱 Responsive tasarım
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Açıklama |
+|---|---|
+| React | Kullanıcı arayüzü |
+| Vite | Build aracı |
+| Redux Toolkit | State yönetimi |
+| React Router DOM | Sayfa yönlendirme |
+| Material UI (MUI) | UI bileşen kütüphanesi |
+| Framer Motion | Animasyonlar |
+| React Toastify | Bildirimler |
+| FakeStore API | Ürün verileri |
+
+---
+
+## 📦 Kurulum
+
+```bash
+# Repoyu klonla
+git clone https://github.com/DevoloperYigidoo/E-Ticaret.git
+
+# Proje dizinine gir
+cd E-Ticaret
+
+# Bağımlılıkları yükle
+npm install
+
+# Geliştirme sunucusunu başlat
+npm run dev
+```
+
+Uygulama `http://localhost:5173` adresinde çalışacaktır.
+
+---
+
+## 📁 Proje Yapısı
+
+```
+src/
+├── components/
+│   ├── Header.jsx        # Navbar, arama, sepet ikonu, tema
+│   ├── ProductList.jsx   # Ürün listesi
+│   ├── Products.jsx      # Tek ürün kartı
+│   ├── BasketPage.jsx    # Sepet yan paneli
+│   ├── PageContainer.jsx # Sayfa sarmalayıcı
+│   └── Loading.jsx       # Yükleme bileşeni
+├── Config/
+│   └── RouterConfig.jsx  # Sayfa rotaları
+├── redux/
+│   └── slices/
+│       ├── productSlices.js
+│       └── basketSlices.js
+├── css/                  # CSS dosyaları
+├── images/               # Görseller
+└── App.jsx
+```
+
+---
+
+## 🔌 API
+
+Bu proje [FakeStore API](https://fakestoreapi.com/) kullanmaktadır.
+
+| Endpoint | Açıklama |
+|---|---|
+| `GET /products` | Tüm ürünleri listeler |
+| `GET /products/:id` | Tek ürün detayı |
+
+---
+
+## 👤 Geliştirici
+
+**Yiğit** — [@DevoloperYigidoo](https://github.com/DevoloperYigidoo)
+
+---
+
+💡 Not: Bu proje öğrenme amaçlı geliştirilmiştir.

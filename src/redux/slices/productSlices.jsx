@@ -9,7 +9,7 @@ const initialState = {
   selectedProduct:{},
 }
 
-const API = import.meta.env.VITE_API_KEY;
+const API = import.meta.env.VITE_API_KEY; //APİ KEYİNİZ
 
 export const getAllProducts = createAsyncThunk("products",async() => {
     try {
